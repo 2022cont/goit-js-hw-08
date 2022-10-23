@@ -33,13 +33,10 @@ function localTextareaInput(event) {
     const getData = localStorage.getItem(STOREG_KEY);
     if (getData) {
         reform.value = JSON.parse(getData);
-
         if (reform.value.email) {
-
             reform.email.value = reform.value.email;
         }
         if (reform.value.message) {
-
             reform.textarea.value = reform.value.message;
         }
 
