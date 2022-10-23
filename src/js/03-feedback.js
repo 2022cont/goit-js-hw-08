@@ -34,8 +34,9 @@ function localTextareaInput(event) {
     if (getData) {
         reform.value = JSON.parse(getData);
 
-        reform.email.value = reform.value.email;
-        reform.textarea.value = reform.value.message;
+        reform.email.value = (reform.value.email) ? reform.value.email : null;
+        reform.textarea.value = (reform.value.message) ? reform.value.message : null;
+       
     }
 
 }
